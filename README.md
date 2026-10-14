@@ -2,8 +2,17 @@
 
 This repository provides a complete reproduction archive for a small
 ink_9um sampling-identity correction and its separate internal technical
-checks. **Progress Prize submission remains pending.** No award, completed
-human review, external peer review or villa pull request is claimed.
+checks. **Submission to the October 2026 Progress Prizes was confirmed by
+the form platform on 14 October 2026.** Organizer review and any award are
+not established. No completed human review, external peer review or villa
+pull request is claimed.
+
+The observed confirmation was "Thanks for submitting your open source
+contributions!" at `2026-10-14T16:59:23.267Z`. The public
+[submission status](submission-status.json) binds this observation to the
+initial submitted repository commit
+`43b02ca9509c9d9bdf2c39e23cd4c265d3360823` and archive hash. Email receipt
+delivery has not been checked.
 
 ## Download and run
 
@@ -41,8 +50,9 @@ The archive is a frozen record of technical execution **before publication**.
 Its `NOT_PUBLISHED` and `NOT_SUBMITTED` status fields describe that historical
 snapshot. Current repository publication and prize submission are established
 separately by their respective receipts; they do not alter the archived bytes.
-The repository has been created, while Progress Prize submission is still
-pending at the time of this wrapper.
+The repository is published, and the October 2026 form submission was
+confirmed on 14 October 2026. This wrapper and `submission-status.json`
+record the later state; the archive remains unchanged.
 
 ## What changed and what was measured
 
