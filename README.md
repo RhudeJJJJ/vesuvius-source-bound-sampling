@@ -4,8 +4,8 @@ This repository provides a complete reproduction archive for a small
 ink_9um sampling-identity correction and its separate internal technical
 checks. **Submission to the October 2026 Progress Prizes was confirmed by
 the form platform on 14 October 2026.** Organizer review and any award are
-not established. No completed human review, external peer review or villa
-pull request is claimed.
+not established. No completed human or external peer review is claimed.
+The upstream correction is now proposed as [villa draft PR #2146](https://github.com/ScrollPrize/villa/pull/2146), opened on 18 October 2026; it is not merged.
 
 The observed confirmation was "Thanks for submitting your open source
 contributions!" at `2026-10-14T16:59:23.267Z`. The public
@@ -13,6 +13,35 @@ contributions!" at `2026-10-14T16:59:23.267Z`. The public
 initial submitted repository commit
 `43b02ca9509c9d9bdf2c39e23cd4c265d3360823` and archive hash. Email receipt
 delivery has not been checked.
+
+
+## Upstream integration (18 October 2026)
+
+[Draft PR #2146](https://github.com/ScrollPrize/villa/pull/2146) targets upstream
+`8aa507c1215f1fa8758f13d0538f7af9710e02d7`. It contains only the two physical-key
+changes and a focused regression test (three files, one commit). The original
+full patch and frozen archive remain unchanged.
+
+[Current validation](upstream-integration/integration-validation.json) records
+baseline failure and corrected success for both shipped configs, checks against
+the full archived source manifest, and a fresh recount of the archived emitted
+indices. [Runtime-source compatibility](upstream-integration/runtime-source-compatibility.json)
+records that the seven runtime files match the archived hashes after accounting
+for Windows CRLF line endings. This is source compatibility, not a fresh runtime
+execution.
+
+Run the new dependency-free check from the villa repository root:
+
+```bash
+python vesuvius/tests/ink_detection/test_aligned21_source_groups.py -v
+```
+
+The fresh check used Python 3.12.14. Pytest and the ML stack were unavailable;
+the historical 24-test replay was not rerun. No new CT loading, model training
+or quality evaluation was performed. The draft leaves personal verification
+unchecked and identifies the author review, personal use commentary and
+before/after screenshots requested by upstream CONTRIBUTING.md as outstanding.
+This PR strengthens the existing contribution; it is not a second prize entry.
 
 ## Download and run
 
