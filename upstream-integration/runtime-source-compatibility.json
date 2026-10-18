@@ -1,0 +1,44 @@
+[
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/config.py",
+    "bytes_current": 61379,
+    "bytes_archived": 62990,
+    "matches_archived_after_crlf_conversion": true
+  },
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/types.py",
+    "bytes_current": 2984,
+    "bytes_archived": 3098,
+    "matches_archived_after_crlf_conversion": true
+  },
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/data/dataset.py",
+    "bytes_current": 26268,
+    "bytes_archived": 26915,
+    "matches_archived_after_crlf_conversion": true
+  },
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/data/segment.py",
+    "bytes_current": 8002,
+    "bytes_archived": 8206,
+    "matches_archived_after_crlf_conversion": true
+  },
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/data/patch_finding_default.py",
+    "bytes_current": 8552,
+    "bytes_archived": 8780,
+    "matches_archived_after_crlf_conversion": true
+  },
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/training/samplers.py",
+    "bytes_current": 14581,
+    "bytes_archived": 14923,
+    "matches_archived_after_crlf_conversion": true
+  },
+  {
+    "path": "vesuvius/src/vesuvius/ink_detection/volume_io.py",
+    "bytes_current": 8262,
+    "bytes_archived": 8508,
+    "matches_archived_after_crlf_conversion": true
+  }
+]

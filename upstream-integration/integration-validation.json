@@ -1,0 +1,60 @@
+{
+  "base_commit": "8aa507c1215f1fa8758f13d0538f7af9710e02d7",
+  "python": "Python 3.12.14",
+  "pytest_available": false,
+  "new_ct_or_training_run": false,
+  "commands": [
+    {
+      "variant": "baseline",
+      "command": "python vesuvius/tests/ink_detection/test_aligned21_source_groups.py -v",
+      "exit_code": 1,
+      "expected_exit_code": 1
+    },
+    {
+      "variant": "corrected",
+      "command": "python vesuvius/tests/ink_detection/test_aligned21_source_groups.py -v",
+      "exit_code": 0,
+      "expected_exit_code": 0
+    }
+  ],
+  "full_archived_manifest_checks": [
+    {
+      "path": "vesuvius/src/vesuvius/ink_detection/configs/aligned21_fixed_scroll_prior.json",
+      "corrected": {
+        "representations": 29,
+        "source_segments": 24,
+        "physical_groups": 24,
+        "paired_source_segments": 5
+      },
+      "baseline_error": "split source ('PHerc0139', '20260115000000-w044_2026011522'): physical keys ['0139:w028', '0139:w044'] for ['native_9p362_level0:w044', 'public_2p4_level2_zmean4:pherc0139-w028']",
+      "false_merge_rejected": true
+    },
+    {
+      "path": "vesuvius/src/vesuvius/ink_detection/configs/aligned21_hybrid_3d2d.json",
+      "corrected": {
+        "representations": 29,
+        "source_segments": 24,
+        "physical_groups": 24,
+        "paired_source_segments": 5
+      },
+      "baseline_error": "split source ('PHerc0139', '20260115000000-w044_2026011522'): physical keys ['0139:w028', '0139:w044'] for ['native_9p362_level0:w044', 'public_2p4_level2_zmean4:pherc0139-w028']",
+      "false_merge_rejected": true
+    }
+  ],
+  "archived_trace_recount": {
+    "scope": "Recount of frozen emitted indices; no new sampler or DataLoader execution",
+    "before": 522,
+    "after": 290,
+    "indices_each": 5760,
+    "batches_each": 90,
+    "scroll_counts_unchanged": true,
+    "before_balance_violations": {
+      "physical_prefix_balance": 90
+    },
+    "after_balance_violations": {}
+  },
+  "changed_config_data": {
+    "vesuvius/src/vesuvius/ink_detection/configs/aligned21_fixed_scroll_prior.json": "Only physical key for pherc0139-w028 differs",
+    "vesuvius/src/vesuvius/ink_detection/configs/aligned21_hybrid_3d2d.json": "Only physical key for pherc0139-w028 differs"
+  }
+}

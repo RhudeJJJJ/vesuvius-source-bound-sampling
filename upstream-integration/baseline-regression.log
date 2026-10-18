@@ -1,0 +1,24 @@
+test_published_source_is_one_group_in_both_configs (__main__.Aligned21SourceGroupsTest.test_published_source_is_one_group_in_both_configs) ... 
+  test_published_source_is_one_group_in_both_configs (__main__.Aligned21SourceGroupsTest.test_published_source_is_one_group_in_both_configs) (config='prior') ... FAIL
+  test_published_source_is_one_group_in_both_configs (__main__.Aligned21SourceGroupsTest.test_published_source_is_one_group_in_both_configs) (config='training') ... FAIL
+
+======================================================================
+FAIL: test_published_source_is_one_group_in_both_configs (__main__.Aligned21SourceGroupsTest.test_published_source_is_one_group_in_both_configs) (config='prior')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmpo_y1cla_/vesuvius/tests/ink_detection/test_aligned21_source_groups.py", line 42, in test_published_source_is_one_group_in_both_configs
+    self.assertEqual(len(set(groups.values())), 24)
+AssertionError: 25 != 24
+
+======================================================================
+FAIL: test_published_source_is_one_group_in_both_configs (__main__.Aligned21SourceGroupsTest.test_published_source_is_one_group_in_both_configs) (config='training')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/tmpo_y1cla_/vesuvius/tests/ink_detection/test_aligned21_source_groups.py", line 42, in test_published_source_is_one_group_in_both_configs
+    self.assertEqual(len(set(groups.values())), 24)
+AssertionError: 25 != 24
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=2)
